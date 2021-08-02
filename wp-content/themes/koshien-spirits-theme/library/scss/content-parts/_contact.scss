@@ -1,0 +1,36 @@
+.contact_form {
+  max-width: 960px;
+  margin: 3rem auto;
+
+  h4 {
+    border-bottom: 0;
+    border-top: 0;
+  }
+
+  .contact_detail {
+    padding: 0 1rem;
+  }
+
+  .fas {
+    padding-right: 5px;
+    color: rgb(0, 110, 255);
+  }
+
+  .prefectures {
+    width: 65%;
+  }
+}
+
+
+input[type="submit"] {
+  margin: 1rem auto;
+  background-color: #0066bf;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Kosugi", sans-serif;
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+  }
+}

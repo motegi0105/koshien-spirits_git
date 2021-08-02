@@ -1,0 +1,44 @@
+#overview {
+  ul {
+    max-width: 720px;
+    margin: 3rem auto;
+    padding-left: 0;
+
+    //text-align: center;
+    @media screen and (max-width:840px) {
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: .5rem;
+      margin-left: 5px;
+      list-style-type: none;
+    }
+
+    .overview_inner {
+      padding: 5px;
+      padding-left: 1.2rem;
+    }
+
+    &.sub {
+      margin: 0;
+
+      @media screen and(max-width:480px) {
+
+        li {
+          list-style-type: disc;
+        }
+      }
+    }
+  }
+
+  .commentator {
+    margin-left: 1.5rem;
+  }
+
+  .fas {
+    // margin-left: -1.25rem;
+    padding-right: 5px;
+    color: rgb(0, 110, 255);
+  }
+}

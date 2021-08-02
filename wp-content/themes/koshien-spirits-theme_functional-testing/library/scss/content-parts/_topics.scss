@@ -1,0 +1,44 @@
+#topics {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+
+  .new-entry-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .new-entry-card-title {
+    text-align: center;
+  }
+
+  @media screen and (max-width:840px) {
+    .a-wrap {
+      width: 50%;
+    }
+  }
+
+  @media screen and (min-width:841px) {
+    .a-wrap {
+      width: 25%;
+    }
+  }
+
+  .a-wrap {
+    transition: .8s;
+  }
+
+  .a-wrap:hover {
+    background: rgba(228, 228, 228, .5);
+  }
+
+  .new-entry-card-thumb {
+    width: 100%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

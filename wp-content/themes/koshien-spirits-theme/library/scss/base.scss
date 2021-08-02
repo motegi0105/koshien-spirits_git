@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+#container {
+  overflow-x: hidden;
+}
+
+/* メインページ：Cocoon-master のデフォルトスタイルを消去 */
+.home .main {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+.home .content-in.wrap {
+  width: 100vw;
+}
+
+/************************************
+** 子テーマ用のスタイルを書く
+************************************/
+/*必要ならばここにコードを書く*/
+.entry-content {
+  max-width: 960px;
+  min-height: 60vh;
+  margin: auto;
+}
+
+#home-main-before {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+#content-top {
+  padding: 3em 0;
+  font-size: 1.35em;
+  text-align: center;
+}
+
+#content-top h2 {
+  margin: 1em 0;
+  font-size: 1.6em;
+}
+
+.small {
+  font-size: .6em;
+}
+
+.footer {
+  padding-bottom: 5px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  /*color: #00b202;*/
+  background: #fff;
+}
+
+.footer-left,
+.footer-center {
+  margin-right: 15px;
+}
+
+/*メインページ*/
+.home section {
+  width: 100%;
+  margin: 30px 0;
+  padding-top: 30px;
+}
+
+.home .section-in {
+  max-width: 1256px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.home section h2 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+/************************************
+** テーマ専用
+************************************/
+
+.entry-title {
+  text-align: center;
+}
+
+.article h3 {
+  border: none;
+}
+
+.home h2 {
+  max-width: 640px;
+  margin: 0 auto 5rem;
+  color: #0066bf;
+
+  border-bottom: 8px double #0066bf;
+}
+
+.home .section-in {
+  margin: auto;
+}
+
+@media screen and (min-width:835px) {
+  .content {
+    margin-top: 84px;
+  }
+}
+
+br.sp-only {
+  display: none;
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+/* トップへ戻るボタンをデフォルトより拡大・位置調整 */
+.go-to-top {
+  right: 5vw;
+  bottom: 40px;
+  transform: scale(1.8);
+}
+
+/* 投稿情報非表示 */
+.page .post-date {
+  display: none;
+  visibility: hidden;
+}
+
+/* ヘッダー ～ メインキャッチ */
+@import "header";
+
+/* メインページ：「青春の夢と憧れの甲子園」とは */
+@import "content-parts/about";
+
+/* メインページ：大会概要 */
+@import "content-parts/overview";
+
+/* メインページ：出場校～出場校ギャラリー */
+@import "content-parts/contestant";
+
+/* メインページ：観覧申込 */
+@import "content-parts/viewing_application";
+
+/* メインページ：トピックス */
+@import "content-parts/topics";
+
+/* メインページ： 主催 */
+@import "content-parts/organizer";
+
+/* 固定ページ：委員会体制 */
+@import "content-parts/committee";
+
+/* 固定ページ：過去の大会 */
+@import "content-parts/gallery";
+
+/* 固定ページ：お問い合わせ */
+@import "content-parts/contact";

@@ -1,0 +1,74 @@
+#about {
+  max-width: 840px;
+  margin: auto;
+
+  article {
+    margin: 4.5rem auto;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .philosophy {
+    p {
+      margin-bottom: .8rem;
+      text-align: justify;
+    }
+
+    div {
+      margin: 3rem auto;
+    }
+
+    .message {
+      width: 100%;
+      margin: 3rem auto;
+    }
+
+    .chairman {
+      margin: 2rem 0;
+      text-align: right;
+    }
+  }
+
+  .philosophy_head {
+    margin: 3rem auto;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-family: "Noto Serif JP", serif;
+
+    p {
+      position: relative;
+      margin: 0;
+      line-height: 1.8;
+      text-align: center;
+
+      &:nth-of-type(1) {
+        left: -2rem;
+      }
+
+      &:nth-of-type(2) {
+        right: -2rem;
+      }
+    }
+  }
+
+
+  .message {
+    margin: 2rem auto;
+    //text-align: center;
+
+    p {
+      margin-bottom: .8rem;
+    }
+  }
+}
+
+#about .wp-block-columns {
+  width: 90%;
+  max-width: 840px;
+  margin: 0 auto;
+}

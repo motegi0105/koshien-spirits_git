@@ -1,0 +1,12 @@
+/*
+  Skin Name: 朗真堂テンプレート02 ファンシー緑
+  Author: 朗真堂 茂木
+  Version: 1.0.2
+  Priority: 9999000000
+*/
+/*以下にスタイルシートを記入してください*/
+.footer-left,
+.footer-center,
+.footer-right {
+  color: #00b202;
+}

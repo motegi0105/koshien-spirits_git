@@ -1,0 +1,22 @@
+#gallery {
+  table.contestant {
+    width: 80%;
+    margin-left: 1.5rem;
+
+    td {
+      border: none;
+    }
+  }
+
+  @media screen and (max-width:480px) {
+    table.contestant {
+      width: 100%;
+      margin: auto;
+
+      td {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

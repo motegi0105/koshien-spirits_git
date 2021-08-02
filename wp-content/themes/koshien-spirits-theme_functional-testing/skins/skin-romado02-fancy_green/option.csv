@@ -1,0 +1,11 @@
+,,オプション名と値をカンマ区切りで書く
+,,行頭にカンマを2つ以上入力することでコメント（相当）になります
+
+site_key_color,#81d742
+site_font_family,kosugi_maru
+site_background_image_url,http://localhost/development/design_template/theme02/wp-content/uploads/2020/08/3646337_m.jpg
+header_background_image_url,http://localhost/development/design_template/theme02/wp-content/uploads/2020/08/1121380.jpg
+header_text_color,#00b202
+global_navi_background_color,#81d742
+global_navi_text_color,#ffffff
+footer_background_color,#81d742
