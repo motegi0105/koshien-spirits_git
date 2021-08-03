@@ -440,7 +440,7 @@ br.sp-only {
   font-size: 2.4rem;
   line-height: 1.2;
   text-decoration: none;
-  text-shadow: #fff 2px 0, #a89898 -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px;
+  text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px;
   transition: .5s;
 }
 
@@ -579,17 +579,6 @@ br.sp-only {
   #cheering_message h2 {
     font-size: calc(100vw / 21);
   }
-}
-
-/* メインページ：観覧申込 */
-#viewing_application .section-in {
-  max-width: 840px;
-  margin: auto;
-}
-
-#viewing_application .to_contact {
-  margin-bottom: 1rem;
-  text-align: center;
 }
 
 /* メインページ：トピックス */

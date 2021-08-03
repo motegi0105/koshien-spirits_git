@@ -148,22 +148,22 @@ br.sp-only {
 @import "header";
 
 /* メインページ：「青春の夢と憧れの甲子園」とは */
-@import "content-parts/about";
+@import "content-parts/main-page/about";
 
 /* メインページ：大会概要 */
-@import "content-parts/overview";
+@import "content-parts/main-page/overview";
 
 /* メインページ：出場校～出場校ギャラリー */
-@import "content-parts/contestant";
+@import "content-parts/main-page/contestant";
 
-/* メインページ：観覧申込 */
-@import "content-parts/viewing_application";
+// /* メインページ：観覧申込 */
+// @import "content-parts/main-page/viewing_application";
 
 /* メインページ：トピックス */
-@import "content-parts/topics";
+@import "content-parts/main-page/topics";
 
 /* メインページ： 主催 */
-@import "content-parts/organizer";
+@import "content-parts/main-page/organizer";
 
 /* 固定ページ：委員会体制 */
 @import "content-parts/committee";
