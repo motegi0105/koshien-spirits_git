@@ -1,0 +1,66 @@
+#sdgs {
+  h3,
+  h4 {
+    margin-bottom: 1.35rem;
+  }
+
+  p {
+    max-width: 840px;
+    margin: 0 auto 1.2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+
+    &.strong {
+      max-width: 240px;
+      margin: 30px auto;
+    }
+
+    &.has-text-align-center {
+      text-align: center;
+    }
+  }
+
+  .sdgs_targets {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    // max-width: 765px;
+    margin: 2rem auto;
+
+    .column {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 15px 10px;
+
+      // @media screen and (max-width:480px) {
+      //   width: 50%;
+      // }
+
+      // @media screen and (min-width:480px) and (max-width:840px) {
+      //   width: calc(100% / 3);
+      // }
+
+      @media screen and (min-width:841px) {
+        width: 50%;
+      }
+    }
+
+    figure {
+      width: 10rem;
+      height: 10rem;
+      // height: 100%;
+      text-align: center;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    p {
+      display: inline-flexbox;
+      width: calc( 100% - 10rem);
+      margin: 0;
+    }
+  }
+}

@@ -150,6 +150,10 @@ br.sp-only {
 /* メインページ：「青春の夢と憧れの甲子園」とは */
 @import "content-parts/main-page/about";
 
+
+/* メインページ：トピックス */
+@import "content-parts/main-page/topics";
+
 /* メインページ：大会概要 */
 @import "content-parts/main-page/overview";
 
@@ -159,8 +163,8 @@ br.sp-only {
 // /* メインページ：観覧申込 */
 // @import "content-parts/main-page/viewing_application";
 
-/* メインページ：トピックス */
-@import "content-parts/main-page/topics";
+/* メインページ：SDGs×オンライン甲子園 */
+@import "content-parts/main-page/sdgs";
 
 /* メインページ： 主催 */
 @import "content-parts/main-page/organizer";
