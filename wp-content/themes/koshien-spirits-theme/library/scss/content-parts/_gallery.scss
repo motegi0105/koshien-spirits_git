@@ -1,4 +1,8 @@
 #gallery {
+  section {
+    margin: 4.8rem 0;
+  }
+
   table.contestant {
     width: 80%;
     margin-left: 1.5rem;
@@ -6,6 +10,15 @@
     td {
       border: none;
     }
+  }
+
+  h2,
+  h3 {
+    margin: 1.2rem 0;
+  }
+
+  p {
+    margin-bottom: 1.2rem;
   }
 
   @media screen and (max-width:480px) {
@@ -19,4 +32,20 @@
       }
     }
   }
+}
+
+#media_archive {
+  margin: 6.4rem 0;
+}
+
+.post-38 .entry-title,
+#media_archive h1 {
+  /* 過去の大会見出し */
+  max-width: 640px;
+  margin: 0 auto 5rem;
+  color: #0066bf;
+  font-size: 1.8rem;
+  line-height: 1.8;
+
+  border-bottom: 8px double #0066bf;
 }

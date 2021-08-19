@@ -150,7 +150,13 @@ br.sp-only {
 
 @media screen and (max-width: 480px) {
   #header .site-name-text {
-    font-size: calc( 100vw / 24);
+    font-size: calc(100vw / 24);
+  }
+}
+
+@media screen and (min-width: 835px) and (max-width: 1279px) {
+  #header .site-name-text {
+    font-size: calc(100vw / 64);
   }
 }
 
@@ -174,6 +180,13 @@ br.sp-only {
 
 #navi .navi-in > ul > li > a {
   padding: 0 2rem !important;
+}
+
+@media screen and (min-width: 835px) and (max-width: 1279px) {
+  #navi .navi-in > ul > li > a {
+    padding: 0 calc(100vw / 48) !important;
+    font-size: calc(100vw / 64) !important;
+  }
 }
 
 .navi-in > ul .sub-menu li {
@@ -421,6 +434,10 @@ br.sp-only {
   margin: 0 auto;
 }
 
+#about .video-container {
+  margin: auto;
+}
+
 /* メインページ：トピックス */
 #topics {
   width: 100%;
@@ -431,7 +448,14 @@ br.sp-only {
 #topics .new-entry-cards {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 481px) and (max-width: 1080px) {
+  #topics .new-entry-cards {
+    max-width: 840px;
+  }
 }
 
 #topics .new-entry-card-title {
@@ -447,21 +471,28 @@ br.sp-only {
   text-align: right;
 }
 
-@media screen and (max-width: 840px) {
-  #topics .a-wrap {
-    width: calc(50% - 15px);
-  }
-}
-
-@media screen and (min-width: 841px) {
-  #topics .a-wrap {
-    width: calc(25% - 15px);
-  }
-}
-
 #topics .a-wrap {
   border: 1px dotted #dedede;
   transition: .8s;
+  margin: 1rem 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  #topics .a-wrap {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1080px) {
+  #topics .a-wrap {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1081px) {
+  #topics .a-wrap {
+    width: calc(25% - 1rem);
+  }
 }
 
 #topics .a-wrap:hover {
@@ -493,7 +524,7 @@ br.sp-only {
   background-color: #0066bf;
   color: #ffbb00;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: calc(100vw / 16);
   line-height: 1.2;
   text-decoration: none;
   text-shadow: #fff 2px 0, #fff -2px 0, #fff 0 -2px, #fff 0 2px, #fff 2px 2px, #fff -2px 2px, #fff 2px -2px, #fff -2px -2px, #fff 1px 2px, #fff -1px 2px, #fff 1px -2px, #fff -1px -2px, #fff 2px 1px, #fff -2px 1px, #fff 2px -1px, #fff -2px -1px;
@@ -503,6 +534,12 @@ br.sp-only {
 #overview .viewing_application a:hover {
   transform: scale(1.05);
   opacity: .85;
+}
+
+@media screen and (min-width: 834px) {
+  #overview .viewing_application a {
+    font-size: 2.4rem;
+  }
 }
 
 #overview ul {
@@ -528,18 +565,33 @@ br.sp-only {
   padding-left: 1.2rem;
 }
 
+@media screen and (max-width: 480px) {
+  #overview ul .overview_inner {
+    padding-left: 0;
+  }
+}
+
 #overview ul.sub {
   margin: 0;
 }
 
+#overview .commentators li {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin-left: 0;
+}
+
 @media screen and (max-width: 480px) {
-  #overview ul.sub li {
-    list-style-type: disc;
+  #overview .commentators li {
+    width: calc(100% / 3);
   }
 }
 
-#overview .commentator {
-  margin-left: 1.5rem;
+#overview .commentators::after {
+  display: block;
+  content: '';
+  clear: both;
 }
 
 #overview .fas {
@@ -805,6 +857,10 @@ br.sp-only {
 }
 
 /* 固定ページ：過去の大会 */
+#gallery section {
+  margin: 4.8rem 0;
+}
+
 #gallery table.contestant {
   width: 80%;
   margin-left: 1.5rem;
@@ -812,6 +868,15 @@ br.sp-only {
 
 #gallery table.contestant td {
   border: none;
+}
+
+#gallery h2,
+#gallery h3 {
+  margin: 1.2rem 0;
+}
+
+#gallery p {
+  margin-bottom: 1.2rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -823,6 +888,21 @@ br.sp-only {
     display: block;
     text-align: center;
   }
+}
+
+#media_archive {
+  margin: 6.4rem 0;
+}
+
+.post-38 .entry-title,
+#media_archive h1 {
+  /* 過去の大会見出し */
+  max-width: 640px;
+  margin: 0 auto 5rem;
+  color: #0066bf;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  border-bottom: 8px double #0066bf;
 }
 
 /* 固定ページ：お問い合わせ */

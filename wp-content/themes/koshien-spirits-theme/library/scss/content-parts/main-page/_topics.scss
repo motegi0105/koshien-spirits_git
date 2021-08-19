@@ -6,7 +6,13 @@
   .new-entry-cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    //justify-content: space-around;
+
+    @media screen and (min-width:481px) and (max-width:1080px) {
+      max-width: 840px;
+    }
   }
 
   .new-entry-card-title {
@@ -22,21 +28,22 @@
     text-align: right;
   }
 
-  @media screen and (max-width:840px) {
-    .a-wrap {
-      width: calc(50% - 15px);
-    }
-  }
-
-  @media screen and (min-width:841px) {
-    .a-wrap {
-      width: calc(25% - 15px);
-    }
-  }
-
   .a-wrap {
     border: 1px dotted #dedede;
     transition: .8s;
+    margin: 1rem 0.5rem;
+
+    @media screen and (max-width:480px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width:481px) and (max-width:1080px) {
+      width: calc(50% - 1rem);
+    }
+
+    @media screen and (min-width:1081px) {
+      width: calc(25% - 1rem);
+    }
   }
 
   .a-wrap:hover {

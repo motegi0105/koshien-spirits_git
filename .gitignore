@@ -133,3 +133,4 @@ wp-config.php
 ### All in ONE WP Migration ###
 # Backups
 /wp-content/ai1wm-backups/
+/wp-content/themes/cocoon-master
