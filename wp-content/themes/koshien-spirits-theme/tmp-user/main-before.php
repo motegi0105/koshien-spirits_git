@@ -11,8 +11,8 @@ if (is_front_page()): ?>
 			「コロナ禍」を乗り越え、高校球児の新しい「カタチ」
 		</p>
 		<p class="name">
-			夏の甲子園大会2021
-			<br>オンライン大会
+			夏のオンライン
+			<br>甲子園大会2021
 			<!-- 春<span class="name_decoration"><img
 					src="https://romadox.sakura.ne.jp/koshien-spirits_dev/wp-content/uploads/2021/02/cherry1_03.png"></span>センバツ甲子園大会2021
 			<br>オンライン大会 -->

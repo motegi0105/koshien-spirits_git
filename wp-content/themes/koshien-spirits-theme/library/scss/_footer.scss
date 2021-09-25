@@ -1,0 +1,32 @@
+.footer {
+  padding-bottom: 5px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  /*color: #00b202;*/
+  background: #fff;
+}
+
+.footer-left,
+.footer-center {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding-top: 0;
+  }
+
+  .footer-bottom-logo .site-name-text {
+    font-size: calc(100vw / 28);
+  }
+
+  .copyright {
+    font-size: calc(100vw / 36);
+  }
+}

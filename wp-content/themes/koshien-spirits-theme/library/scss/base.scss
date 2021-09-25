@@ -53,24 +53,6 @@ body {
   font-size: .6em;
 }
 
-.footer {
-  padding-bottom: 5px;
-}
-
-.footer-left,
-.footer-center,
-.footer-right {
-  box-sizing: border-box;
-  border-radius: 5px;
-
-  /*color: #00b202;*/
-  background: #fff;
-}
-
-.footer-left,
-.footer-center {
-  margin-right: 15px;
-}
 
 /*メインページ*/
 .home section {
@@ -117,8 +99,12 @@ body {
   margin: auto;
 }
 
-@media screen and (min-width:835px) {
-  .content {
+.content {
+  @media screen and (max-width: 834px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 835px) {
     margin-top: 84px;
   }
 }
@@ -147,15 +133,23 @@ br.sp-only {
 /* ヘッダー ～ メインキャッチ */
 @import "header";
 
-/* メインページ：「青春の夢と憧れの甲子園」とは */
-@import "content-parts/main-page/about";
+/* フッター */
+@import "footer";
 
+/* 投稿記事 */
+@import "content-parts/post";
+
+/* メインページ：「青春の夢と憧れ甲子園」とは */
+@import "content-parts/main-page/about";
 
 /* メインページ：トピックス */
 @import "content-parts/main-page/topics";
 
 /* メインページ：大会概要 */
 @import "content-parts/main-page/overview";
+
+/* メインページ：大会結果 */
+@import "content-parts/main-page/awards";
 
 /* メインページ：出場校～出場校ギャラリー */
 @import "content-parts/main-page/contestant";

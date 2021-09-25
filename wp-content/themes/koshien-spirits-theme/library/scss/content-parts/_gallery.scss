@@ -36,6 +36,13 @@
 
 #media_archive {
   margin: 6.4rem 0;
+
+  //アイテムが奇数個の時に幅いっぱいになってしまう仕様の修正
+  @media screen and (max-width: 600px) {
+    .blocks-gallery-item {
+      max-width: calc(50% - 1em) !important;
+    }
+  }
 }
 
 .post-38 .entry-title,

@@ -75,6 +75,12 @@
     font-size: 1.5rem;
   }
 
+  h3 {
+    text-align: center;
+    font-size: 1.175rem;
+    margin-bottom: 2rem;
+  }
+
   ul {
     max-width: 720px;
     margin: auto;
@@ -88,8 +94,13 @@
 }
 
 @media screen and (max-width:480px) {
+
   #contestant h2,
   #cheering_message h2 {
     font-size: calc(100vw / 21);
+  }
+
+  #cheering_message h3 {
+    font-size: calc(100vw / 28);
   }
 }

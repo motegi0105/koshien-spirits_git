@@ -5,9 +5,9 @@
 ?>
 <?php if (!is_user_administrator()) :
 //管理者を除外してカウントする場合は以下に挿入?>
-
 <?php endif; ?>
 <?php //全ての訪問者をカウントする場合は以下に挿入?>
 <link rel='stylesheet' id='koshien-spirits-theme-css'
-  href='<?php echo get_stylesheet_directory_uri() ?>/library/css/base.css?ver=<?php echo date('U'); ?>'
+  href='<?php echo get_stylesheet_directory_uri() ?>/library/css/base.min.css?ver=<?php echo date('U'); ?>'
   media='all' />
+<link rel="SHORTCUT ICON" href="https://koshien-spirits.com/favicon.ico" />
